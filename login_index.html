@@ -12,30 +12,32 @@
 <script src="kwitter.js"></script>
 </head>
 <body>
+	<div class="container">
+	<button id="logout" onclick="logout();" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>		
 <center>
-	<h1 class="header">	
-		Chit-Chat 	<sup>
+    <h1 class="header">	
+	Chit-Chat 	<sup>
 	</sup>
 </h1>
 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
 	<img src="college-students-600x400-600x400.jpg">
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	</div>
+	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+		<label >User Name : </label>
+		<input type = "text" id="user-name" class="form-control" placeholder="User Name">
+		<label >Email : </label>
+		<input type = "text" id="email" class="form-control" placeholder="Email-id">
+		<button id="login_button" class="btn btn-success" onclick="addUser()">Log in</button>
 		</div>
-		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
-			<label >User Name : </label>
-			<input type = "text" id="user-name" class="form-control" placeholder="User Name">
-			<label >Email : </label>
-			<input type = "text" id="email" class="form-control" placeholder="Email-id">
-			<button id="login_button" class="btn btn-success" onclick="addUser()">Log in</button>
-			</div>
 </center>
 </body>
 </html>
