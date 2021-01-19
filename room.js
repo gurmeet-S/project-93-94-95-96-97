@@ -41,3 +41,8 @@ function redirectToRoomName(name)
   localStorage.setItem("room_name", name);
     window.location = "page.html";
 }
+function logout() {
+  localStorage.removeItem("user_name");
+  localStorage.removeItem("room_name");
+      window.location = "login_index.html";
+  }
